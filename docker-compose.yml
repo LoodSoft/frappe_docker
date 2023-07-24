@@ -2,7 +2,7 @@ version: "3"
 
 services:
   backend:
-    image: frappe/erpnext:v14.27.7
+    image: frappe/erpnext:v14.30.1
     deploy:
       restart_policy:
         condition: always
@@ -11,7 +11,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   configurator:
-    image: frappe/erpnext:v14.27.7
+    image: frappe/erpnext:v14.30.1
     deploy:
       restart_policy:
         condition: none
@@ -39,7 +39,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   create-site:
-    image: frappe/erpnext:v14.27.7
+    image: frappe/erpnext:v14.30.1
     deploy:
       restart_policy:
         condition: none
@@ -92,7 +92,7 @@ services:
       - "3306:3306"
 
   frontend:
-    image: frappe/erpnext:v14.27.7
+    image: frappe/erpnext:v14.30.1
     deploy:
       restart_policy:
         condition: always
@@ -114,7 +114,7 @@ services:
       - "8080:8080"
 
   queue-default:
-    image: frappe/erpnext:v14.27.7
+    image: frappe/erpnext:v14.30.1
     deploy:
       restart_policy:
         condition: always
@@ -128,7 +128,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   queue-long:
-    image: frappe/erpnext:v14.27.7
+    image: frappe/erpnext:v14.30.1
     deploy:
       restart_policy:
         condition: always
@@ -142,7 +142,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   queue-short:
-    image: frappe/erpnext:v14.27.7
+    image: frappe/erpnext:v14.30.1
     deploy:
       restart_policy:
         condition: always
@@ -180,7 +180,7 @@ services:
       - redis-socketio-data:/data
 
   scheduler:
-    image: frappe/erpnext:v14.27.7
+    image: frappe/erpnext:v14.30.1
     deploy:
       restart_policy:
         condition: always
@@ -192,7 +192,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   websocket:
-    image: frappe/erpnext:v14.27.7
+    image: frappe/erpnext:v14.30.1
     deploy:
       restart_policy:
         condition: always
@@ -208,6 +208,5 @@ volumes:
   redis-queue-data:
   redis-cache-data:
   redis-socketio-data:
-  apps:
   sites:
   logs:

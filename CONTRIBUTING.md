@@ -41,6 +41,11 @@ We use [Docker Buildx Bake](https://docs.docker.com/engine/reference/commandline
 FRAPPE_VERSION=... ERPNEXT_VERSION=... docker buildx bake <targets>
 ```
 
+Examlple
+```shell
+FRAPPE_VERSION=version-14 ERPNEXT_VERSION=v14.30.1.1 FRAPPE_REPO=https://github.com/loodsoft/frappe ERPNEXT_REPO=https://github.com/loodsoft/erpnext docker buildx bake -f docker-bake.hcl erpnext
+```
+
 Available targets can be found in `docker-bake.hcl`.
 
 ## Test

@@ -43,7 +43,7 @@ FRAPPE_VERSION=... ERPNEXT_VERSION=... docker buildx bake <targets>
 
 Examlple
 ```shell
-FRAPPE_VERSION=v14.44.0 ERPNEXT_VERSION=v14.34.3.1 FRAPPE_REPO=https://github.com/frappe/frappe ERPNEXT_REPO=https://github.com/loodsoft/erpnext docker buildx bake -f docker-bake.hcl erpnext --no-cache
+FRAPPE_VERSION=v14.44.0 ERPNEXT_VERSION=v14.34.3.1 FRAPPE_REPO=https://github.com/loodsoft/frappe ERPNEXT_REPO=https://github.com/loodsoft/erpnext docker buildx bake -f docker-bake.hcl erpnext --no-cache
 ```
 
 Available targets can be found in `docker-bake.hcl`.
